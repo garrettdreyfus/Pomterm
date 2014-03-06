@@ -12,4 +12,4 @@ for i in `seq $value1 -1 1`; do
     sleep 1m
 done
 aplay sound.wav &
-./pom $value2 $value1
+./pom.sh $value2 $value1
