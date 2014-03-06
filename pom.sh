@@ -1,10 +1,10 @@
-value1=25
-if [ ! -z $1]; then
-	value1=$1
+value1=$1
+if [ -z $1]; then
+	value1=25
 fi
-value2=5
-if [ ! -z $1]; then
-	value2=$2
+value2=$2
+if [ -z $2]; then
+	value2=5
 fi
 for i in `seq $value1 -1 1`; do
     clear
