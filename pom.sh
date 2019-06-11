@@ -8,7 +8,7 @@ if [ -z $2]; then
 fi
 for i in `seq $value1 -1 1`; do
     clear
-    echo $i | figlet -c
+    echo $i | toilet -f future --filter rainbow
     sleep 1m
 done
 aplay sound.wav &
